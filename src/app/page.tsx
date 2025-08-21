@@ -19,7 +19,6 @@ export default function LoginPage() {
         if (res.ok) {
             const data = await res.json();
             setMessage("Login erfolgreich! Token: " + data.token);
-            // 👉 hier könntest du den Token in localStorage/sessionStorage legen
         } else {
             setMessage("Login fehlgeschlagen");
         }
